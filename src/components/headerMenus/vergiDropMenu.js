@@ -1,6 +1,6 @@
 
 
-const VergiMenu = () => {
+function VergiMenu () {
   return (
     <div className="kredi-menu">
       <a href="/damga">Damga Vergisi Hesaplama</a>

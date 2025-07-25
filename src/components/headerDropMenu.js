@@ -14,7 +14,7 @@ import SeyahatMenu from "./headerMenus/seyahatDropMenu.js";
 import DigerMenu from "./headerMenus/digerDropMenu.js";
 
 
-const HeaderMenu = () => {
+function HeaderMenu () {
   return (
     <ul className="menu-drop-wrapper">
       <li className="menu-drop">

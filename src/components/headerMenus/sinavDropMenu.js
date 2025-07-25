@@ -1,6 +1,6 @@
 
 
-const SinavMenu = () => {
+function SinavMenu () {
   return (
     <div className="kredi-menu">
       <a href="/ales">ALES Puan Hesaplama</a>

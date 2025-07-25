@@ -2,7 +2,7 @@ import HeaderMenu from "./headerDropMenu.js";
 import MainPage from "./mainPage.js";
 
 
-function App() {
+function App () {
   return (
     <div className="App">
       <div className="mainWrapper">

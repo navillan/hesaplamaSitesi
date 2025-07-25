@@ -1,6 +1,6 @@
 
 
-const DigerMenu = () => {
+function DigerMenu () {
   return (
     <div className="kredi-menu">
       <a href="/aidat-gecikme-tazminati">Aidat Gecikme Tazminatı Hesaplama</a>

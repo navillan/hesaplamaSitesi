@@ -1,6 +1,6 @@
 
 
-const FinansMenu = () => {
+function FinansMenu () {
   return (
     <div className="kredi-menu">
       <a href="/altin">Altın Hesaplama</a>

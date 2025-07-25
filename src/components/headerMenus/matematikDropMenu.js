@@ -1,6 +1,6 @@
 
 
-const MatematikMenu = () => {
+function MatematikMenu () {
   return (
     <div className="kredi-menu">
       <a href="/alan">Alan Hesaplama</a>

@@ -1,6 +1,6 @@
 
 
-const SigortaMenu = () => {
+function SigortaMenu () {
   return (
     <div className="kredi-menu">
       <a href="/dask">DASK Sigortası Hesaplama</a>

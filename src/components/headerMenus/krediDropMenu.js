@@ -1,6 +1,6 @@
 
 
-const KrediMenu = () => {
+function KrediMenu () {
   return (
     <div className="kredi-menu">
       <a href="/ihtiyac-kredisi">İhtiyaç Kredisi Hesaplama</a>

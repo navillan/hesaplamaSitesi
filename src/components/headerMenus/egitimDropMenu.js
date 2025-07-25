@@ -1,6 +1,6 @@
 
 
-const EgitimMenu = () => {
+function EgitimMenu () {
   return (
     <div className="kredi-menu">
       <a href="/ders-notu">Ders Notu Hesaplama</a>

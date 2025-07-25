@@ -1,6 +1,6 @@
 
 
-const MuhasebeMenu = () => {
+function MuhasebeMenu () {
   return (
     <div className="kredi-menu">
       <a href="/brutten-nete-maas">Brütten Nete Maaş Hesaplama</a>

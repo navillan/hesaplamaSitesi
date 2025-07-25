@@ -1,6 +1,6 @@
 
 
-const HukukMenu = () => {
+function HukukMenu () {
   return (
     <div className="kredi-menu">
       <a href="/arabuluculuk-ucreti">Arabuluculuk Ücreti Hesaplama</a>

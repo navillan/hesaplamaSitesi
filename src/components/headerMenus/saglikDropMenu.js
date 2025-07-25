@@ -1,6 +1,6 @@
 
 
-const SaglikMenu = () => {
+function SaglikMenu () {
   return (
     <div className="kredi-menu">
       <a href="/adet-gunu">Adet Günü Hesaplama</a>

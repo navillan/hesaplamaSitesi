@@ -1,6 +1,6 @@
 
 
-const SeyahatMenu = () => {
+function SeyahatMenu () {
   return (
     <div className="kredi-menu">
       <a href="/elektrikli-arac-sarj">Elektrikli Araç Şarj Hesaplama</a>

@@ -1,6 +1,6 @@
 
 
-const TicaretMenu = () => {
+function TicaretMenu () {
   return (
     <div className="kredi-menu">
       <a href="/arsa-payi">Arsa Payı Hesaplama</a>

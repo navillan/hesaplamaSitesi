@@ -1,6 +1,6 @@
 
 
-const ZamanMenu = () => {
+function ZamanMenu () {
   return (
     <div className="kredi-menu">
       <a href="/gun-batimi">Gün Batımı Hesaplama</a>
