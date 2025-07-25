@@ -1,4 +1,6 @@
-import HeaderMenu from "./headerMenu.js";
+import HeaderMenu from "./headerDropMenu.js";
+import MainPage from "./mainPage.js";
+
 
 function App() {
   return (
@@ -8,10 +10,7 @@ function App() {
           <p className="header-title">Hesaplar</p>
           <HeaderMenu />
         </header>
-        <div className="main-page">
-          <h1>Hesaplama Sitesi</h1>
-          <p>Sitenin kullanım amacı; anlık gelişen merak veya ihtiyaç durumunda istenilen bütün hesaplama yöntemlerine ulaşılabilen bir hesaplama sitesi olması.</p>
-        </div>
+          <MainPage />
       </div>
     </div>
   );
