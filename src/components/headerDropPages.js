@@ -79,8 +79,8 @@ function HeaderDropPages() {
   return (
     <Routes>
           <Route path="/" element={<MainPage />} />
-          <Route path="/ihtiyac" element={<Ihtiyac />} />
-          <Route path="/konut" element={<Konut />} />
+          <Route path="/ihtiyac-kredisi" element={<Ihtiyac />} />
+          <Route path="/konut-kredisi" element={<Konut />} />
           <Route path="/kredi" element={<Kredi />} />
           <Route path="/kredi-karti-asgari" element={<KrediKartiAsgari />} />
           <Route path="/altin" element={<Altin />} />

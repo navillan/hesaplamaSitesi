@@ -2,7 +2,7 @@
 
 function Inc() {
   return (
-    <div className="inc-container">
+    <div className="feature-main-div inc-container">
       <h1>Matematik İçin Entegral Hesaplama</h1>
       <p>
         Bu araç, belirli bir fonksiyonun integralini hesaplamanıza yardımcı olur.

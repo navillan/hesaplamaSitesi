@@ -2,7 +2,7 @@
 
 function Dask() {
   return (
-    <div>
+    <div className="feature-main-div dask-container">
       <h1>Dask Sigorta</h1>
       <p>Bu sayfa Dask sigortası ile ilgili bilgiler içermektedir.</p>
       {/* Diğer içerikler buraya eklenebilir */}

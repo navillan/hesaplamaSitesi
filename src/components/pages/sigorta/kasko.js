@@ -2,7 +2,7 @@
 
 function Kasko() {
   return (
-    <div>
+    <div className="feature-main-div kasko-container">
       <h1>Kasko Sigortası</h1>
       <p>Kasko sigortası, aracınızın hasar görmesi durumunda finansal koruma sağlar.</p>
       <ul>

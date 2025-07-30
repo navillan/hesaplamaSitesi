@@ -7,7 +7,7 @@ function SaatFarki() {
   const localDate = new Date(utcDate.getTime() - localOffset);
 
   return (
-    <div>
+    <div className="feature-main-div saat-farki-container">
       <h1>Saat Farkı Hesaplama</h1>
       <p>UTC Tarihi: {utcDate.toISOString()}</p>
       <p>Yerel Tarih: {localDate.toISOString()}</p>

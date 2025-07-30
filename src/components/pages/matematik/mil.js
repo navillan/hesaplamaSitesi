@@ -2,7 +2,7 @@
 
 function Mil() {
   return (
-    <div className="mil-container">
+    <div className="feature-main-div mil-container">
       <h1 className="mil-title">Mil Hesaplama</h1>
       <p className="mil-description">
         Mil, genellikle uçuş mesafelerini ölçmek için kullanılan bir birimdir. 

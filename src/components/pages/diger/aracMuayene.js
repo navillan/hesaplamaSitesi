@@ -2,7 +2,7 @@
 
 function AracMuayene() {
   return (
-    <div className="arac-muayene">
+    <div className="feature-main-div arac-muayene">
       <h1>Arac Muayene Hesaplama</h1>
       <p>Bu sayfa arac muayene tarihini hesaplamak için kullanılır.</p>
       <form>

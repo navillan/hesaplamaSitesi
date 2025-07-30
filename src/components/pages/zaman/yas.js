@@ -7,7 +7,7 @@ function Yas() {
   const ageInYears = Math.floor(ageInMilliseconds / (1000 * 60 * 60 * 24 * 365.25));
 
   return (
-    <div>
+    <div className="feature-main-div yas-container">
       <h1>Yaşınız</h1>
       <p>{ageInYears} yaşındasınız!</p>
     </div>

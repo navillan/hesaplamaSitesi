@@ -2,7 +2,7 @@
 
 function SigaraMaliyeti() {
   return (
-    <div className="sigara-maliyeti">
+    <div className="feature-main-div sigara-maliyeti">
       <h1>Sigara Maliyeti Hesaplama</h1>
       <p>
         Sigara içenler için sigara maliyetini hesaplamak, sağlık ve finansal
