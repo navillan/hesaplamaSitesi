@@ -20,12 +20,22 @@ function Konut() {
 
   return (
     <div className="feature-main-div kredi-container">
-      <h1>Konut Kredisi Hesaplama</h1>
+      <h1 className="hesap-araci-header">Konut Kredisi Hesaplama</h1>
       <p>Bu araç, konut kredisi aylık ödemelerinizi, toplam ödemenizi ve toplam faiz tutarınızı hesaplamanıza yardımcı olur.</p>
-      <input id="kredi-tutari" type="text" placeholder="Kredi Tutarı" />
-      <input id="vade" type="text" placeholder="Vade (Ay)" />
-      <input id="faiz-orani" type="text" placeholder="Faiz Oranı (%)" />
-      <HesaplaTemizleButtons hesaplamaFunction={konutKredisiFunction}/>
+      <div className="input-info">
+        <p>Kredi Tutarı: </p>
+        <input className="input-value" id="kredi-tutari" type="text" placeholder="Kredi Tutarı" />
+      </div>
+      <div className="input-info">
+        <p>Vade (Ay): </p>
+        <input className="input-value" id="vade" type="text" placeholder="Vade (Ay)" />
+      </div>
+      <div className="input-info">
+        <p>Faiz Oranı (%): </p>
+        <input className="input-value" id="faiz-orani" type="text" placeholder="Faiz Oranı (%)" />
+      </div>
+
+      <HesaplaTemizleButtons hesaplamaFunction={konutKredisiFunction} />
     </div>
   );
 }
