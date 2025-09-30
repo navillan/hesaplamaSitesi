@@ -1,28 +1,20 @@
-import React, { useState } from "react";
+import HesaplaTemizleButtons from "../../hesaplaTemizleButtons.js";
 
 function Ihtiyac() {
-  const [tutar, setTutar] = useState("");
-  const [vade, setVade] = useState("");
-  const [faiz, setFaiz] = useState("");
-  const [aylikTaksit, setAylikTaksit] = useState(null);
-  const [toplamGeriOdeme, setToplamGeriOdeme] = useState(null);
-
-  const hesapla = (e) => {
-    e.preventDefault();
-    const krediTutari = Number(tutar);
-    const aylikFaizOrani = Number(faiz) / 100 / 12;
-    const aySayisi = Number(vade);
-
-    if (krediTutari > 0 && aylikFaizOrani > 0 && aySayisi > 0) {
-      const taksit =
-        (krediTutari * aylikFaizOrani) /
-        (1 - Math.pow(1 + aylikFaizOrani, -aySayisi));
-      setAylikTaksit(taksit.toFixed(2));
-      setToplamGeriOdeme((taksit * aySayisi).toFixed(2));
-    } else {
-      setAylikTaksit(null);
-      setToplamGeriOdeme(null);
+  const ihtiyacKredisiFunction = () => {
+    const krediTutari = parseFloat(document.getElementById("kredi-tutari").value);
+    const vade = parseFloat(document.getElementById("vade").value);
+    const faizOrani = parseFloat(document.getElementById("faiz-orani").value) / 100;
+    if (isNaN(krediTutari) || isNaN(vade) || isNaN(faizOrani) || vade === 0) {
+      alert("Lütfen geçerli sayılar giriniz.");
+      return;
     }
+    const aylikFaiz = faizOrani / 12;
+    const aylikOdeme = (krediTutari * aylikFaiz) / (1 - Math.pow(1 + aylikFaiz, -vade));
+    const toplamOdeme = aylikOdeme * vade;
+    const toplamFaiz = toplamOdeme - krediTutari;
+    const sonucElement = document.querySelector(".hesap-sonuc");
+    sonucElement.textContent = `Aylık Ödeme: ${aylikOdeme.toFixed(2)} TL, Toplam Ödeme: ${toplamOdeme.toFixed(2)} TL, Toplam Faiz: ${toplamFaiz.toFixed(2)} TL`;
   };
 
   return (
@@ -32,46 +24,11 @@ function Ihtiyac() {
         İhtiyaç kredisi, acil nakit ihtiyaçlarınızı karşılamak için kullanabileceğiniz bir kredi türüdür. 
         Bu hesaplama aracı ile aylık taksitlerinizi ve toplam geri ödeme tutarınızı hesaplayabilirsiniz.
       </p>
-      <form onSubmit={hesapla} className="ihtiyac-form">
-        <label>
-          Kredi Tutarı (₺):
-          <input
-            type="number"
-            value={tutar}
-            onChange={(e) => setTutar(e.target.value)}
-            required
-            min="1"
-          />
-        </label>
-        <label>
-          Vade (Ay):
-          <input
-            type="number"
-            value={vade}
-            onChange={(e) => setVade(e.target.value)}
-            required
-            min="1"
-          />
-        </label>
-        <label>
-          Yıllık Faiz Oranı (%):
-          <input
-            type="number"
-            value={faiz}
-            onChange={(e) => setFaiz(e.target.value)}
-            required
-            min="0.01"
-            step="0.01"
-          />
-        </label>
-        <button type="submit">Hesapla</button>
-      </form>
-      {aylikTaksit && (
-        <div className="ihtiyac-sonuc">
-          <p>Aylık Taksit: <strong>{aylikTaksit} ₺</strong></p>
-          <p>Toplam Geri Ödeme: <strong>{toplamGeriOdeme} ₺</strong></p>
-        </div>
-      )}
+      <input id="kredi-tutari" type="text" placeholder="Kredi Tutarı" />
+      <input id="vade" type="text" placeholder="Vade (Ay)" />
+      <input id="faiz-orani" type="text" placeholder="Faiz Oranı (%)" />
+      <HesaplaTemizleButtons hesaplamaFunction={ihtiyacKredisiFunction}/>
+
     </div>
   );
 }
