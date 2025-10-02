@@ -137,12 +137,13 @@ body {
   align-items: center;
   height: 2.2rem;
   width: 100%;
-  max-width: 290px;
+  max-width: 380px;
   justify-content: space-between;
 }
 
 .input-value {
   width: 60%;
+  box-sizing: border-box;
   height: 1.8rem;
   border: 1px solid #ccc;
   border-radius: 0.3rem;

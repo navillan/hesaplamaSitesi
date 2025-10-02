@@ -15,15 +15,11 @@ import VizeFinalOrtalama from "./pages/egitim/vizeFinalOrtalama.js";
 import Altin from "./pages/finans/altin.js";
 import Doviz from "./pages/finans/doviz.js";
 import Enflasyon from "./pages/finans/enflasyon.js";
-import Faiz from "./pages/finans/faiz.js";
-import Iban from "./pages/finans/iban.js";
-import KiraArtisOran from "./pages/finans/kiraArtisOran.js";
 import Arabuluculuk from "./pages/hukuk/arabuluculuk.js";
 import IcraMasrafi from "./pages/hukuk/icraMasrafi.js";
 import Ihtiyac from "./pages/kredi/ihtiyac.js";
 import Konut from "./pages/kredi/konut.js";
 import Kredi from "./pages/kredi/kredi.js";
-import KrediKartiAsgari from "./pages/kredi/krediKartiAsgari.js";
 import Alan from "./pages/matematik/alan.js";
 import Hacim from "./pages/matematik/hacim.js";
 import Inc from "./pages/matematik/inc.js";
@@ -55,9 +51,7 @@ import Ales from "./pages/sinav/ales.js";
 import Ayt from "./pages/sinav/ayt.js";
 import Dgs from "./pages/sinav/dgs.js";
 import Ehliyet from "./pages/sinav/ehliyet.js";
-import Kpss from "./pages/sinav/kpss.js";
 import Lgs from "./pages/sinav/lgs.js";
-import Tus from "./pages/sinav/tus.js";
 import ArsaPayi from "./pages/ticaret/arsaPayi.js";
 import Indirim from "./pages/ticaret/indirim.js";
 import DamgaVergisi from "./pages/vergi/damgaVergisi.js";
@@ -82,20 +76,14 @@ function HeaderDropPages() {
           <Route path="/ihtiyac-kredisi" element={<Ihtiyac />} />
           <Route path="/konut-kredisi" element={<Konut />} />
           <Route path="/kredi" element={<Kredi />} />
-          <Route path="/kredi-karti-asgari" element={<KrediKartiAsgari />} />
           <Route path="/altin" element={<Altin />} />
           <Route path="/doviz" element={<Doviz />} />
           <Route path="/enflasyon" element={<Enflasyon />} />
-          <Route path="/faiz" element={<Faiz />} />
-          <Route path="/iban" element={<Iban />} />
-          <Route path="/kira-artis-oran" element={<KiraArtisOran />} />
           <Route path="/ales" element={<Ales />} />
           <Route path="/ayt" element={<Ayt />} />
           <Route path="/dgs" element={<Dgs />} />
           <Route path="/ehliyet" element={<Ehliyet />} />
-          <Route path="/kpss" element={<Kpss />} />
           <Route path="/lgs" element={<Lgs />} />
-          <Route path="/tus" element={<Tus />} />
           <Route path="/ders-notu" element={<DersNotu />} />
           <Route path="/eokul-not" element={<EokulNot />} />
           <Route path="/lise-mezuniyet-puani" element={<LiseMezuniyet />} />
