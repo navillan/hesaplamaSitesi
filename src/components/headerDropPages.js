@@ -69,7 +69,7 @@ import SaatFarki from "./pages/zaman/saatFarki.js";
 import SaatKac from "./pages/zaman/saatKac.js";
 import Yas from "./pages/zaman/yas.js";
 
-function HeaderDropPages() {
+function HeaderDropPages({ currencies, currenciesDate }) {
   return (
     <Routes>
           <Route path="/" element={<MainPage />} />
@@ -77,7 +77,7 @@ function HeaderDropPages() {
           <Route path="/konut-kredisi" element={<Konut />} />
           <Route path="/kredi" element={<Kredi />} />
           <Route path="/altin" element={<Altin />} />
-          <Route path="/doviz" element={<Doviz />} />
+          <Route path="/doviz" element={<Doviz currencies={currencies} currenciesDate={currenciesDate} />} />
           <Route path="/enflasyon" element={<Enflasyon />} />
           <Route path="/ales" element={<Ales />} />
           <Route path="/ayt" element={<Ayt />} />

@@ -2,11 +2,13 @@ import { useState, useEffect } from "react";
 import HeaderMenu from "./headerDropMenu.js";
 import SmallHeaderDropMenu from "./smallHeaderDropMenu.js";
 import HeaderDropPages from "./headerDropPages.js";
+import useGetCurrencies from "../hooks/useGetCurrencies.js";
 
 
 
 function App () {
   const [currentWidth, setCurrentWidth] = useState(window.innerWidth);
+  const { currenciesDate, currencies } = useGetCurrencies();
 
   useEffect(() => {
     const handleResize = () => setCurrentWidth(window.innerWidth);
@@ -21,7 +23,7 @@ function App () {
           <a className="header-title" href="/">Anasayfa</a>
           {currentWidth < 1024 ? <SmallHeaderDropMenu /> : <HeaderMenu />}
         </header>
-        <HeaderDropPages />
+        <HeaderDropPages currencies={currencies} currenciesDate={currenciesDate} />
       </div>
     </div>
   );
