@@ -1,32 +1,30 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: 'Segoe UI', sans-serif;
 }
 
 
 .app-header {
   display: flex;
-  border-bottom: 2px solid blue;
+  border-bottom: 2px solid dodgerblue;
   height: 3.2rem;
 }
 
 .header-title {
-  color: blue;
+  color: dodgerblue;
   text-decoration: none;
   text-align: center;
   font-size: 1.5rem;
   padding-top: 6px;
   padding-left: 3px;
   min-width: 16vw;
-  border-right: 2px solid blue;
+  border-right: 2px solid dodgerblue;
 }
 
 .small-menu-drop-container {
   position: fixed;
-  background-color: blue;
+  background-color: dodgerblue;
   color: white;
   right: 0;
   width: 11rem;
@@ -52,9 +50,9 @@ body {
   position: relative;
   padding: 0.2rem 0.6rem;
   cursor: pointer;
-  color: blue;
+  color: dodgerblue;
   background-color: white;
-  border-bottom: 1px solid blue;
+  border-bottom: 1px solid dodgerblue;
   word-spacing: 8px;
 }
 
@@ -81,15 +79,16 @@ body {
   list-style: none;
   align-items: center;
   justify-content: space-between;
+  padding-inline-start: 1.2rem;
   width: 100%;
-  margin-right: 0.4rem;
+  margin-right: 0.5rem;
 }
 
 .menu-drop {
   position: relative;
   padding: 0rem 0.3rem;
   cursor: pointer;
-  color: blue;
+  color: dodgerblue;
   background-color: white;
 }
 
@@ -125,10 +124,22 @@ body {
   justify-content: center;
   padding: 4rem 2rem;
   background-color: #f0f0f0;
+  max-width: 750px;
+  margin-top: 5rem;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .hesap-araci-header {
-  margin-bottom: 0.8rem;
+  margin-bottom: 0.4rem;
+}
+
+.hesap-araci-description {
+  margin-bottom: 1.5rem;
+  text-align: center;
+  max-width: 660px;
 }
 
 .input-info {
@@ -162,7 +173,7 @@ body {
 }
 
 .hesapla-button {
-  background-color: blue;
+  background-color: dodgerblue;
   color: white;
   border: none;
   padding: 0.5rem 1rem;
