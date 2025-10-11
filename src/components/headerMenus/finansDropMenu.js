@@ -1,11 +1,11 @@
-
+import { Link } from "react-router-dom";
 
 function FinansMenu () {
   return (
     <div className="kredi-menu">
-      <a href="/altin">Altın Hesaplama</a>
-      <a href="/doviz">Döviz Hesaplama</a>
-      <a href="/enflasyon">Enflasyon Hesaplama</a>
+      <Link to="/altin">Altın Hesaplama</Link>
+      <Link to="/doviz">Döviz Hesaplama</Link>
+      <Link to="/enflasyon">Enflasyon Hesaplama</Link>
     </div>
   )
 };

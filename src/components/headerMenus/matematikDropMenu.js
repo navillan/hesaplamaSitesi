@@ -1,15 +1,15 @@
-
+import { Link } from "react-router-dom";
 
 function MatematikMenu () {
   return (
     <div className="kredi-menu">
-      <a href="/alan">Alan Hesaplama</a>
-      <a href="/hacim">Hacim Hesaplama</a>
-      <a href="/inc">İnç Hesaplama</a>
-      <a href="/metrekare">Metrekare Hesaplama</a>
-      <a href="/mil">Mil Hesaplama</a>
-      <a href="/oran">Oran Hesaplama</a>
-      <a href="/yüzde">Yüzde Hesaplama</a>
+      <Link to="/alan">Alan Hesaplama</Link>
+      <Link to="/hacim">Hacim Hesaplama</Link>
+      <Link to="/inc">İnç Hesaplama</Link>
+      <Link to="/metrekare">Metrekare Hesaplama</Link>
+      <Link to="/mil">Mil Hesaplama</Link>
+      <Link to="/oran">Oran Hesaplama</Link>
+      <Link to="/yuzde">Yüzde Hesaplama</Link>
     </div>
   )
 };

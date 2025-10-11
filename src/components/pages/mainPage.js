@@ -1,4 +1,4 @@
-
+import { Link } from "react-router-dom";
 
 const MainPage = () => {
   return (
@@ -7,13 +7,13 @@ const MainPage = () => {
           <p>Aktif Olan Hesaplamalar</p>
           <ul>
             <p>Kredi</p>
-            <li>İhtiyaç Kredisi Hesaplama</li>
-            <li>Konut Kredisi Hesaplama</li>
+            <li><Link to="/ihtiyac-kredisi">İhtiyaç Kredisi Hesaplama</Link></li>
+            <li><Link to="/konut-kredisi">Konut Kredisi Hesaplama</Link></li>
             <p>Finans</p>
-            <li>Altın Hesaplama</li>
-            <li>Döviz Hesaplama</li>
+            <li><Link to="/altin">Altın Hesaplama</Link></li>
+            <li><Link to="/doviz">Döviz Hesaplama</Link></li>
             <p>Eğitim</p>
-            <li>Ders Notu Hesaplama</li>
+            <li><Link to="/ders-notu">Ders Notu Hesaplama</Link></li>
           </ul>
           <p>* Sitede bulunan hesaplama araçları örnek olarak eklenmiştir. Beklenenden yanlış sonuçlar verebilir.</p>
     </div>

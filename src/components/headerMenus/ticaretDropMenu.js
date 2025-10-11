@@ -1,10 +1,10 @@
-
+import { Link } from "react-router-dom";
 
 function TicaretMenu () {
   return (
     <div className="kredi-menu">
-      <a href="/arsa-payi">Arsa Payı Hesaplama</a>
-      <a href="/indirim">İndirim Hesaplama</a>
+      <Link to="/arsapayi">Arsa Payı Hesaplama</Link>
+      <Link to="/indirim">İndirim Hesaplama</Link>
     </div>
   )
 };

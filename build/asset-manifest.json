@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/hesaplamaSitesi/static/css/main.adbe2844.css",
-    "main.js": "/hesaplamaSitesi/static/js/main.95355740.js",
+    "main.js": "/hesaplamaSitesi/static/js/main.88444b77.js",
     "index.html": "/hesaplamaSitesi/index.html",
     "main.adbe2844.css.map": "/hesaplamaSitesi/static/css/main.adbe2844.css.map",
-    "main.95355740.js.map": "/hesaplamaSitesi/static/js/main.95355740.js.map"
+    "main.88444b77.js.map": "/hesaplamaSitesi/static/js/main.88444b77.js.map"
   },
   "entrypoints": [
     "static/css/main.adbe2844.css",
-    "static/js/main.95355740.js"
+    "static/js/main.88444b77.js"
   ]
 }

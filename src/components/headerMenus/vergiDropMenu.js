@@ -1,15 +1,15 @@
-
+import { Link } from "react-router-dom";
 
 function VergiMenu () {
   return (
     <div className="kredi-menu">
-      <a href="/damga">Damga Vergisi Hesaplama</a>
-      <a href="/emlak">Emlak Vergisi Hesaplama</a>
-      <a href="/gelir">Gelir Vergisi Hesaplama</a>
-      <a href="/gumruk">Gümrük Vergisi Hesaplama</a>
-      <a href="/kdv">KDV Hesaplama</a>
-      <a href="/kira">Kira Vergisi Hesaplama</a>
-      <a href="/otv">ÖTV Hesaplama</a>
+      <Link to="/damga">Damga Vergisi Hesaplama</Link>
+      <Link to="/emlak">Emlak Vergisi Hesaplama</Link>
+      <Link to="/gelir">Gelir Vergisi Hesaplama</Link>
+      <Link to="/gumruk">Gümrük Vergisi Hesaplama</Link>
+      <Link to="/kdv">KDV Hesaplama</Link>
+      <Link to="/kira">Kira Vergisi Hesaplama</Link>
+      <Link to="/otv">ÖTV Hesaplama</Link>
     </div>
   )
 };

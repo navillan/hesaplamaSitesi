@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import HeaderMenu from "./headerDropMenu.js";
+import { Link } from "react-router-dom";
 import SmallHeaderDropMenu from "./smallHeaderDropMenu.js";
 import HeaderDropPages from "./headerDropPages.js";
 import useGetCurrencies from "../hooks/useGetCurrencies.js";
@@ -20,7 +21,7 @@ function App () {
     <div className="App">
       <div className="mainWrapper">
         <header className="app-header">
-          <a className="header-title" href="/">Anasayfa</a>
+          <Link className="header-title" to="/">Anasayfa</Link>
           {currentWidth < 1024 ? <SmallHeaderDropMenu /> : <HeaderMenu />}
         </header>
         <HeaderDropPages currencies={currencies} currenciesDate={currenciesDate} />
